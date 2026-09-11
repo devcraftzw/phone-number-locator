@@ -1,0 +1,23 @@
+[project]
+name = "phone-number-locator"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Sean Craig Dhlamini", email = "devcraftzw@gmail.com" }
+]
+requires-python = ">=3.14"
+dependencies = [
+    "folium>=0.20.0",
+    "ipykernel>=7.3.0",
+    "opencage>=3.4.0",
+    "phonenumbers>=9.0.39",
+    "python-dotenv>=1.2.3",
+]
+
+[project.scripts]
+phone-number-locator = "phone_number_locator:main"
+
+[build-system]
+requires = ["uv_build>=0.12.10,<0.13.0"]
+build-backend = "uv_build"
